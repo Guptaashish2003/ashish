@@ -1,5 +1,5 @@
 "use client"
-import { useCursorProvider } from "@/utils/context"
+import { useCursorProvider } from "@/utils/Context"
 import {motion,useSpring,useMotionValue,AnimationProps,Variants} from "framer-motion"
 
 import { ArrowUpRight } from "lucide-react"
