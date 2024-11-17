@@ -1,8 +1,8 @@
 "use client"
 
 import { ReactNode } from "react"
-import { ContextProvider } from "@/utils/context"
-import { Cursor } from "./cursor"
+import { ContextProvider } from "@/utils/Context"
+import { Cursor } from "./Cursor"
 import { SmoothScroll } from "./Smooth-Scroll"
 
 
