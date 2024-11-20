@@ -13,15 +13,15 @@ export const Header = ({social}:HeaderProps) => {
   return (
     <motion.div
     initial={{
-      height: isActive ? "100%" : "0",
+      height: isActive ? "auto" : "0",
     }}
     animate={{
-      height: isActive ? (isMobile ? "100%" : "94%") : "0",
+      height: isActive ? (isMobile ? "100vh" : "94%") : "0",
     }}
-    className="fixed top-0 md:top-12 md:right-12 right-0 z-20"
+    className="fixed top-0 min-h-full md:top-12 md:right-12 right-0 z-20"
   >
     <motion.div
-      className="md:w-[480px] w-full h-full bg-primary relative rounded-3xl"
+      className="md:w-[480px] w-full h-auto bg-primary relative rounded-3xl"
       variants={menu(isMobile)}
       animate={isActive ? "open" : "closed"}
       initial="closed"

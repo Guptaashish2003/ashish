@@ -3,9 +3,11 @@ import { Transition } from '@/components/ui/Transitions/Transition'
 import Link from 'next/link'
 import { TextReveal } from '@/components/ui/Typography/TextReveal'
 import Header from '@/components/Header'
-import { SocialLinks } from '@/utils/Data'
+import { SocialLinks, timelineData } from '@/utils/Data'
 import { Hero } from '@/components/Hero'
 import { aboutData } from '@/utils/Data'
+import About from '@/components/About'
+import { Experience } from '@/components/Experience'
 
 const Home = () => {
   // const {
@@ -27,6 +29,9 @@ const Home = () => {
       </Transition>
       <Header social={SocialLinks}/>
       <Hero about={aboutData}/>
+      <About about={aboutData} timeline={timelineData}/>
+      <Experience timeline={timelineData}/>
+
     
 
     </main>

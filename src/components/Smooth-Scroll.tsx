@@ -1,3 +1,4 @@
+"use client"
 import { ReactNode, useEffect } from "react"
 import Lenis from "@studio-freight/lenis"
 
@@ -9,6 +10,7 @@ export const SmoothScroll = ({ children }: { children: ReactNode }) => {
             lennis.raf(time)
             requestAnimationFrame(raf)
         }
+        requestAnimationFrame(raf)
     } ,[])
   return children
 }

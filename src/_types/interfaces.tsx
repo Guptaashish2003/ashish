@@ -146,3 +146,20 @@ export interface NavBarProps {
     _id: string;
   }
   
+  export interface AboutProps {
+    about: About;
+    timeline: Timeline[];
+  }
+  export interface TimelineCardProps {
+    timeline: Timeline;
+    activeIndex: number;
+    setActiveIndex: React.Dispatch<React.SetStateAction<number>>;
+    index: number;
+  }
+  
+  // experineceprops
+  export interface ExperienceProps {
+    timeline: Timeline[];
+  }
+  
+  
