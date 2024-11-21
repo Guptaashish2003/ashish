@@ -3,11 +3,16 @@ import { Transition } from '@/components/ui/Transitions/Transition'
 import Link from 'next/link'
 import { TextReveal } from '@/components/ui/Typography/TextReveal'
 import Header from '@/components/Header'
-import { SocialLinks, timelineData } from '@/utils/Data'
+import { projectData, skillsData, SocialLinks, timelineData, } from '@/utils/Data'
 import { Hero } from '@/components/Hero'
 import { aboutData } from '@/utils/Data'
 import About from '@/components/About'
+import { Project } from '@/_types/interfaces'
+
 import { Experience } from '@/components/Experience'
+import ParallaxText from '@/components/ui/ScrollVallocity'
+import { Projects } from '@/components/Project/Projects'
+
 
 const Home = () => {
   // const {
@@ -31,6 +36,49 @@ const Home = () => {
       <Hero about={aboutData}/>
       <About about={aboutData} timeline={timelineData}/>
       <Experience timeline={timelineData}/>
+      <section id="skills">
+        <ParallaxText baseVelocity={-8}>
+        {skillsData
+        .sort((a,b)=>b.sequence-a.sequence)
+        
+        .map((skill)=>(
+          skill.enabled ? (
+            <span key={skill?._id} className='md:text-7xl text-xl font-semibold uppercase text-white/30'>
+              {skill.name} •
+            </span>
+          ):null
+        ))}        
+        </ParallaxText>  
+        <ParallaxText baseVelocity={8}>
+        {skillsData
+        .sort((a,b)=>b.sequence-a.sequence)
+        
+        .map((skill)=>(
+          skill.enabled ? (
+            <span key={skill?._id} className='md:text-7xl text-xl font-semibold uppercase text-white/30'>
+              {skill.name} •
+            </span>
+          ):null
+        ))}        
+        </ParallaxText>  
+        <ParallaxText baseVelocity={-8}>
+        {skillsData
+        .sort((a,b)=>b.sequence-a.sequence)
+        
+        .map((skill)=>(
+          skill.enabled ? (
+            <span key={skill?._id} className='md:text-7xl text-xl font-semibold uppercase text-white/30'>
+              {skill.name} •
+            </span>
+          ):null
+        ))}        
+        </ParallaxText>  
+          </section>
+          {/* project section */}
+          <section id="projects">
+            <Projects data={projectData as Project[]}/>
+
+          </section>
 
     
 

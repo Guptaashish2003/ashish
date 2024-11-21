@@ -102,6 +102,7 @@ export interface NavBarProps {
     githuburl: string;
     title: string;
     sequence: number;
+    isLiveUrl: boolean;
     image: Image;
     description: string;
     techStack: string[];
@@ -161,5 +162,28 @@ export interface NavBarProps {
   export interface ExperienceProps {
     timeline: Timeline[];
   }
+
+  // parallaxprops
+
+  export interface ParallaxProps {
+    children: React.ReactNode;
+    className?: string;
+    baseVelocity: number;
+    wrapperClassName?: string;
+  }
   
-  
+  export interface ProjectContextProps {
+    projects: Project[];
+    appliedFilter: string;
+  filteredProjects: Project[];
+    sort: boolean;
+    setAppliedFilter: React.Dispatch<React.SetStateAction<string>>;
+    setFilteredProjects: React.Dispatch<React.SetStateAction<Project[]>>;
+    setSort: React.Dispatch<React.SetStateAction<boolean>>;
+    singleProject: Project | null;
+    setSingleProject: React.Dispatch<React.SetStateAction<Project | null>>;
+  }
+
+  export interface ProjectProps {
+    data: Project[];
+  }

@@ -50,7 +50,7 @@ const About = ({ about, timeline }: AboutProps) => {
               width={400}
               height={400}
               alt={about.name}
-              className="rounded-xl max-md:aspect-square object-cover"
+              className="rounded-xl w-full max-md:aspect-square object-cover"
             />
           </Transition>
         </div>
