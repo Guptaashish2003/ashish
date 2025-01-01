@@ -17,6 +17,11 @@ export const ContextProvider = ({children}:{children:ReactNode}) => {
         </Context.Provider>
     )
 }
+export const useVariants = () =>{
+    const {setVariant,variant} = useContext(Context);
+    return {variant , setVariant}
+}
+
 
 export const useCursorProvider = () => {
     return useContext(Context)

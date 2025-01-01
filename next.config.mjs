@@ -11,6 +11,15 @@ const nextConfig = {
       {
         hostname: "dev-to-uploads.s3.amazonaws.com",
       },
+      {
+        hostname:"plus.unsplash.com"
+      },
+      {
+        hostname:"images.unsplash.com"
+      },
+      {
+        hostname:"shalb.com"
+      }
     ],
   },
 };

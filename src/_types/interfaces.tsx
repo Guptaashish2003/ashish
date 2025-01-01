@@ -184,6 +184,6 @@ export interface NavBarProps {
     setSingleProject: React.Dispatch<React.SetStateAction<Project | null>>;
   }
 
-  export interface ProjectProps {
+  interface ProjectProps {
     data: Project[];
   }

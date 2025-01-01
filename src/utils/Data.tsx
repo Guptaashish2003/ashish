@@ -504,7 +504,7 @@ export const projectData = [
     sequence: 1,
     image: {
       public_id: "projects/arportfolio",
-      url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/projects/arportfolio.png",
+      url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
     },
     description:
       "A personal portfolio website built using Nextjs, Tailwind CSS and Framer Motion.",
@@ -521,7 +521,7 @@ export const projectData = [
     sequence: 2,
     image: {
       public_id: "projects/biyondbazaar",
-      url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/projects/biyondbazaar.png",
+      url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
     },
     description:
       "An E-commerce website built using Nextjs, Tailwind CSS and Prisma.",
@@ -537,7 +537,7 @@ export const projectData = [
     sequence: 3,
     image: {
       public_id: "projects/netflix",
-      url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/projects/netflix.png",
+      url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
     },
     description:
       "A Netflix clone built using Nextjs, Tailwind CSS and MongoDB.",
@@ -553,7 +553,7 @@ export const projectData = [
     sequence: 4,
     image: {
       public_id: "projects/teacherbooking",
-      url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/projects/teacherbooking.png",
+      url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
     },
     description:
       "A teacher booking system built using Nextjs, Tailwind CSS and MongoDB.",
@@ -569,7 +569,7 @@ export const projectData = [
     sequence: 5,
     image: {
       public_id: "projects/mailtracker",
-      url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/projects/mailtracker.png",
+      url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
     },
     description:
       "A mail tracking website built using Nextjs, Tailwind CSS and MongoDB.",
@@ -585,7 +585,7 @@ export const projectData = [
     sequence: 7,
     image: {
       public_id: "projects/biyondbytes",
-      url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/projects/biyondbytes.png",
+      url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
     },
     description:
       "A personal portfolio website built using Nextjs, Tailwind CSS and Framer Motion.",
@@ -597,4 +597,73 @@ export const projectData = [
     enabled: true,
   },
   
+]
+
+export const ServiceData = [
+  {
+    name: "Frontend Development",
+    charge: "1000",
+    desc: "Design and development of responsive and interactive user interfaces using React, Vue, or Angular.",
+    enabled: true,
+    _id: "frontend-dev-001",
+    image: {
+      url: "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJvbnRlbmQlMjB1aXxlbnwwfHwwfHx8MA%3D%3D",
+      alt: "Frontend Development",
+    },
+  },
+  {
+    name: "Backend Development",
+    charge: "1200",
+    desc: "Server-side logic and API development using Node.js, Django, or Ruby on Rails.",
+    enabled: true,
+    _id: "backend-dev-002",
+    image: {
+      url: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2VuZCUyMGluJTIwY29kaW5nfGVufDB8fDB8fHww",
+      alt: "Backend Development",
+    },
+  },
+  {
+    name: "Python Scripting",
+    charge: "800",
+    desc: "Automation scripts, data processing, and integration solutions using Python.",
+    enabled: true,
+    _id: "python-scripting-003",
+    image: {
+      url: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHB5dGhvbiUyMGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+      alt: "Python Scripting",
+    },
+  },
+  {
+    name: "Teaching",
+    charge: "600",
+    desc: "Personalized coding lessons and workshops for individuals or teams.",
+    enabled: false,
+    _id: "teaching-004",
+    image: {
+      url: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVhY2hpbmd8ZW58MHx8MHx8fDA%3D",
+      alt: "Teaching",
+    },
+  },
+  {
+    name: "DevOps Services",
+    charge: "1500",
+    desc: "CI/CD pipeline setup, infrastructure as code, and containerization with Docker and Kubernetes.",
+    enabled: true,
+    _id: "devops-005",
+    image: {
+      url: "https://shalb.com/wp-content/uploads/2019/11/Devops1.jpeg",
+      alt: "DevOps Services",
+    },
+  },
+  {
+    name: "Cloud Computing",
+    charge: "2000",
+    desc: "Cloud infrastructure setup and optimization using AWS, Azure, or GCP.",
+    enabled: true,
+    _id: "cloud-computing-006",
+    image: {
+      url: "https://images.unsplash.com/photo-1667984390527-850f63192709?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdWQlMjBjb21wdXRpbmd8ZW58MHx8MHx8fDA%3D",
+      alt: "Cloud Computing",
+    },
+  },
 ]
