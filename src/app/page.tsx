@@ -3,7 +3,7 @@ import { Transition } from '@/components/ui/Transitions/Transition'
 import Link from 'next/link'
 import { TextReveal } from '@/components/ui/Typography/TextReveal'
 import Header from '@/components/Header'
-import { projectData, skillsData, SocialLinks, timelineData, ServiceData} from '@/utils/Data'
+import { projectData, skillsData, SocialLinks, timelineData, ServiceData,PersonalInfo} from '@/utils/Data'
 import { Hero } from '@/components/Hero'
 import { aboutData } from '@/utils/Data'
 import About from '@/components/About'
@@ -14,6 +14,7 @@ import { Experience } from '@/components/Experience'
 import ParallaxText from '@/components/ui/ScrollVallocity'
 import { Projects } from '@/components/Project/Projects'
 import HoverImageLink from '@/components/ui/HoverImageLink'
+import ContactUs from '@/components/ContactUs'
 
 
 const Home = () => {
@@ -107,6 +108,13 @@ const Home = () => {
           </div>
         </Transition>
       </section>
+      <div
+        className="rounded-t-[2rem] md:rounded-t-[3rem] overflow-hidden"
+        id="contact"
+      >
+        <ContactUs email={PersonalInfo?.email} about={aboutData} social={SocialLinks} />
+      </div>
+
 
     
 

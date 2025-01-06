@@ -5,19 +5,19 @@ export const NavLinks = [
   },
   {
     title: "About",
-    url: "/about",
+    url: "#about",
   },
   {
     title: "Projects",
-    url: "/projects",
+    url: "#projects",
   },
   {
     title: "Contact",
-    url: "/contact",
+    url: "#contact",
   },
   {
     title: "Blog",
-    url: "/blog",
+    url: "https://biyondbytes.com/",
   },
   {
     title: "Resume",
@@ -28,7 +28,7 @@ export const NavLinks = [
 export const SocialLinks = [
   {
     platform: "Github",
-    url: "github.com/guptaashish2003",
+    url: "https://github.com/guptaashish2003",
     image: {
       public_id: "social/github",
       url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/social/github.png",
@@ -38,7 +38,7 @@ export const SocialLinks = [
   },
   {
     platform: "Linkedin",
-    url: "linkedin.com/in/ashish-gupta-2003",
+    url: "https://www.linkedin.com/in/guptaashish2003/",
     image: {
       public_id: "social/linkedin",
       url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/social/linkedin.png",
@@ -48,7 +48,7 @@ export const SocialLinks = [
   },
   {
     platform: "Twitter",
-    url: "twitter.com/guptaashish2003",
+    url: "https://x.com/guptaashish2003",
     image: {
       public_id: "social/twitter",
       url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/social/twitter.png",
@@ -58,7 +58,7 @@ export const SocialLinks = [
   },
   {
     platform: "Instagram",
-    url: "instagram.com/guptaashish2003",
+    url: "https://instagram.com/ashish.gupta_03",
     image: {
       public_id: "social/instagram",
       url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/social/instagram.png",
@@ -69,7 +69,7 @@ export const SocialLinks = [
 
   {
     platform: "Youtube",
-    url: "youtube.com/guptaashish2003",
+    url: "https://youtube.com/guptaashish2003",
     image: {
       public_id: "social/youtube",
       url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/social/youtube.png",
@@ -79,7 +79,7 @@ export const SocialLinks = [
   },
   {
     platform: "BiyondBytes",
-    url: "biyondbytes.com/guptaashish2003",
+    url: "https://biyondbytes.com/",
     image: {
       public_id: "social/medium",
       url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/social/medium.png",
@@ -99,7 +99,7 @@ export const aboutData = {
   exp_year: "2",
   address: "Delhi, India",
   some_total: "90",
-  phoneNumber: "+91 9625110498",
+  phoneNumber: "+91 96251104xx",
   avatar: {
     public_id: "avatar/ashish",
     url: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1jw19lo9wq52pt2lmaq2.jpg",
@@ -667,3 +667,13 @@ export const ServiceData = [
     },
   },
 ]
+export const PersonalInfo = {
+  name: "Ashish Gupta",
+  email:"work.ar.gutpa@gmail.com",
+  phoneNumber:"+91 9625110498",
+  address:"Delhi, India",
+  instagram:"https://instagram.com/ashish.gupta_2003",
+  linkedin:"https://linkedin.com/in/guptaashish2003",
+  github:"https://github.com/guptaashish2003",
+  twitter:"https://twitter.com/guptaashish2003",
+}
