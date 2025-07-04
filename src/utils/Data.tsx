@@ -85,7 +85,7 @@ export const SocialLinks = [
       url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/social/medium.png",
     },
     enabled: true,
-    _id: "7",
+    _id: "6",
   },
 ];
 
@@ -582,7 +582,7 @@ export const projectData = [
   
   {
     title: "BiyondBytes",
-    sequence: 7,
+    sequence: 6,
     image: {
       public_id: "projects/biyondbytes",
       url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",

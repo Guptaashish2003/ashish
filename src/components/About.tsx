@@ -10,6 +10,7 @@ import { formatDate } from "@/utils/Tools";
 
 const About = ({ about, timeline }: AboutProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  console.log(about, "about and timeline");
   const education = timeline
     .filter((itm) => itm.forEducation && itm.enabled === true)
     .sort((a, b) => b.sequence - a.sequence);
@@ -65,69 +66,69 @@ const TimeLineCard = ({
   activeIndex,
   setActiveIndex,
   index,
-}: TimelineCardProps) => {   
-    console.log(index, activeIndex,"hellowerild")
+}: TimelineCardProps) => {
+  console.log(index, activeIndex, "hellowerild");
   return (
     <div className="border-b border-primary/20 py-4">
-    <div
-      className="flex items-center justify-between gap-4 cursor-pointer select-none"
-      onClick={() => setActiveIndex(index)}
-    >
-      <span>0{index + 1}</span>
-      <span className="text-xl md:text-3xl font-bold flex-1">
-        {timeline.jobTitle}
-      </span>
-      <div className="relative size-6 flex items-center justify-center">
-        <span className="bg-primary w-4 md:w-6 h-0.5 absolute" />
-        <motion.span
-          initial={{ rotate: 90 }}
-          animate={{
-            rotate: activeIndex === index ? 0 : 90,
-          }}
-          className="absolute bg-primary w-4 md:w-6 h-0.5 rotate-90"
-        />
+      <div
+        className="flex items-center justify-between gap-4 cursor-pointer select-none"
+        onClick={() => setActiveIndex(index)}
+      >
+        <span>0{index + 1}</span>
+        <span className="text-xl md:text-3xl font-bold flex-1">
+          {timeline.jobTitle}
+        </span>
+        <div className="relative max-sm:hidden size-6 flex items-center justify-center">
+          <span className="bg-primary w-4 md:w-6 h-0.5 absolute" />
+          <motion.span
+            initial={{ rotate: 90 }}
+            animate={{
+              rotate: activeIndex === index ? 0 : 90,
+            }}
+            className="absolute bg-primary w-4 md:w-6 h-0.5 rotate-90"
+          />
+        </div>
       </div>
+      <motion.div
+        initial={{
+          height: 0,
+        }}
+        animate={{
+          height: activeIndex === index ? "auto" : 0,
+        }}
+        transition={{ duration: 0.3 }}
+        className="overflow-hidden"
+      >
+        <p className="text-foreground/60 py-4 max-md:text-sm">
+          {timeline.summary}
+        </p>
+        <div className="flex justify-between items-center pb-3 text-foreground/80">
+          <div className="max-md:text-sm">
+            <span>{timeline.company_name}</span>
+            <span>{timeline.jobLocation}</span>
+          </div>
+          <div className="max-md:text-xs">
+            <span className="italic">
+              {formatDate(timeline.startDate).month +
+                ", " +
+                formatDate(timeline.startDate).year}
+            </span>
+            {" - "}
+            <span className="italic">
+              {formatDate(timeline.endDate).month +
+                ", " +
+                formatDate(timeline.endDate).year}
+            </span>
+          </div>
+        </div>
+        <ul className="list-disc list-inside">
+          {timeline.bulletPoints.map((point, index) => (
+            <li key={index} className="text-foreground/80 max-md:text-sm">
+              {point}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
     </div>
-    <motion.div
-  initial={{
-    height: 0, 
-  }}
-  animate={{
-    height: activeIndex === index ? "auto" : 0, 
-  }}
-  transition={{ duration: 0.3 }} 
-  className="overflow-hidden"
->
-      <p className="text-foreground/60 py-4 max-md:text-sm">
-        {timeline.summary}
-      </p>
-      <div className="flex justify-between items-center pb-3 text-foreground/80">
-        <div className="max-md:text-sm">
-          <span>{timeline.company_name}</span>
-          <span>{timeline.jobLocation}</span>
-        </div>
-        <div className="max-md:text-xs">
-          <span className="italic">
-            {formatDate(timeline.startDate).month +
-              ", " +
-              formatDate(timeline.startDate).year}
-          </span>
-          {" - "}
-          <span className="italic">
-            {formatDate(timeline.endDate).month +
-              ", " +
-              formatDate(timeline.endDate).year}
-          </span>
-        </div>
-      </div>
-      <ul className="list-disc list-inside">
-        {timeline.bulletPoints.map((point, index) => (
-          <li key={index} className="text-foreground/80 max-md:text-sm">
-            {point}
-          </li>
-        ))}
-      </ul>
-    </motion.div>
-  </div>
   );
 };

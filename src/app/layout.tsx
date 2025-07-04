@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import { Provider } from "@/components/Provider";
+import { Toaster } from "@/components/ui/sonner";
 
 
 const geistSans = localFont({
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={poppins.className}>
         <Provider>{children}</Provider>
+                <Toaster position="top-center" />
       </body>
     </html>
   );
