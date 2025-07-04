@@ -48,6 +48,7 @@ const ContactUs = ({ email, social, about }: ContactUsProps) => {
   }, [social]);
 
   const onSubmit = async (data: FormData) => {
+  const { name, email, subject, message } = data;
   const mailtoLink = `mailto:work.ar.gupta@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
     `Hi,\n\nMy name is ${name} (${email}).\n\n${message}\n\nRegards,\n${name}`
   )}`;

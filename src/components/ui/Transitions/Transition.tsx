@@ -2,7 +2,7 @@
 
 import { HTMLMotionProps,motion } from "framer-motion"
 
-interface TransitionProps extends HTMLMotionProps<"span"> {}
+interface TransitionProps extends HTMLMotionProps<"div"> {}
 
 
 export const Transition = ({
