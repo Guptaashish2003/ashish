@@ -9,7 +9,6 @@ import { Transition } from "./ui/Transitions/Transition";
 import Link from "next/link";
 import { About, SocialHandle } from "@/_types/interfaces";
 import { Input, Textarea } from "./ui/Input";
-import { toast } from "sonner"
 
 interface ContactUsProps {
   about: About;
@@ -49,23 +48,12 @@ const ContactUs = ({ email, social, about }: ContactUsProps) => {
   }, [social]);
 
   const onSubmit = async (data: FormData) => {
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-      });
-      const json = await res.json();
-      console.log("Response:", json);
-      if (json.success) {
-        toast.success("Message sent successfully!");
-      } else {
-        toast.error("Failed to send message. Please try again later.");
-      }
-      reset();
-    } catch (err) {
-      console.error("Failed to send message", err);
-    }
+  const mailtoLink = `mailto:work.ar.gupta@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    `Hi,\n\nMy name is ${name} (${email}).\n\n${message}\n\nRegards,\n${name}`
+  )}`;
+
+  // open the user's mail client
+  window.location.href = mailtoLink;
   };
 
 
