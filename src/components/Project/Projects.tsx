@@ -19,7 +19,7 @@ interface ProjectProps {
   data: Project[];
 }
 export const Projects = ({data}:ProjectProps) => {
-  const [filterValue , setFilterValue] = useState("")
+  const [filterValue , setFilterValue] = useState("all")
 
   return (
     <ProjectsProvider data={data}>

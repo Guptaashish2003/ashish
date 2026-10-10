@@ -5,6 +5,8 @@ import { Project } from "@/_types/interfaces"
 import { ProjectContextProps } from "@/_types/interfaces"
 
 
+import { matchesFilter } from "./filterConfig"
+
 const ProjectsContext = createContext<ProjectContextProps>({
     projects: [] as Project[],
     appliedFilter:"all",
@@ -34,10 +36,10 @@ const ProjectsProvider = ({children,data}:{children:ReactNode,data:Project[]})=>
         }
     },[sort])
     const applyFilters = (data:Project[],filterValues:string)=>{
-        if(filterValues === "all") return data;
+        if(filterValues === "all" || !filterValues) return data;
         return data.filter((project)=>
-        project.techStack.some((tech)=>filterValues === tech.trim()))
-    
+            matchesFilter(project.techStack, filterValues)
+        );
     }
 
     const value = {

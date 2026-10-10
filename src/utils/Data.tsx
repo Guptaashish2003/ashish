@@ -133,7 +133,7 @@ export const timelineData = [
     forHighLight: true,
     enabled: true
   },
-   {
+  {
     jobTitle: "Software Engineer Intern",
     company_name: "Collabroot Marketing Pvt Ltd",
     jobLocation: "Gurgaon, India",
@@ -147,7 +147,7 @@ export const timelineData = [
       "\nImplemented OAuth 2.0, JWT authentication, and optimized backend for scalability.",
       "\nIntegrated Facebook Pixel purchase events and improved UI/UX for better conversions."
     ],
-  _id: "5",
+    _id: "5",
     forEducation: false,
     forHighLight: false,
     enabled: true,
@@ -232,8 +232,8 @@ export const timelineData = [
     forHighLight: false,
     enabled: true,
   },
- 
-  
+
+
 ];
 
 
@@ -629,41 +629,51 @@ export const skillsData = [
       url: "https://res.cloudinary.com/dk8jigqke/image/upload/v1630194026/skills/drizzle.png",
     },
   },
-  
+
 
 ]
 
 export const projectData = [
   {
-    title: "ArPortfolio",
+    title: "Ashish Gupta – Portfolio",
     sequence: 1,
     image: {
       public_id: "projects/arportfolio",
       url: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/olfxlpm4cv791gg4el4i.png",
     },
     description:
-      "A personal portfolio website built using Nextjs, Tailwind CSS and Framer Motion.",
-    techStack: ["Nextjs", "Tailwind CSS", "Framer Motion"],
+      "• Modern and interactive personal portfolio showcasing full-stack & AI/ML engineering projects, technical skills, and experience.\n" +
+      "• Built with Next.js 14 (App Router), TypeScript, and Tailwind CSS for a scalable, modular architecture.\n" +
+      "• Smooth animations, micro-interactions, and page transitions powered by Framer Motion, paired with Lenis for buttery scrolling.\n" +
+      "• Optimized for blazing fast performance with Static Site Generation (SSG) and responsive next/image optimization.\n" +
+      "• Fully responsive across mobile, tablet, and desktop, styled with custom components and Lucide icons.\n" +
+      "• Deployed on Vercel with automated CI/CD directly from GitHub.\n",
+    techStack: ["Nextjs", "TypeScript", "Tailwind CSS", "Framer Motion"],
     isLiveUrl: true,
     liveurl: "https://ar-gupta.vercel.app/",
-    githuburl: "github.com/guptaashish2003/arportfolio",
+    githuburl: "https://github.com/guptaashish2003/ashish",
     _id: "1",
     enabled: true,
   },
-  // i made biyondbazaar ecommerce website with nextjs , full stack netflix clone with mern stack , teacher booking system with mern stack , mailtracker website with next js , blog website with nextjs prisma tailwind css,
   {
-    title: "BiyondBazaar",
+    title: "BeyondBazaar",
     sequence: 2,
     image: {
       public_id: "projects/biyondbazaar",
-      url: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kghrbj4ojqdvxt2l3icc.png",
+      url: "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/z2qjvyedkasuxdbnzgno.png",
     },
     description:
-      "An E-commerce website built using Nextjs, Tailwind CSS and Prisma.",
-    techStack: ["Nextjs", "Tailwind CSS", "Prisma"],
+      "• Production-ready full-stack e-commerce platform built on Next.js 14 (App Router), TypeScript, Firebase Firestore, and Redux Toolkit.\n" +
+      "• Dynamic product discovery featuring advanced category filters, full-text keyword search, and multi-variant selections (sizes, colors).\n" +
+      "• Persistent shopping cart across user sessions with real-time stock and inventory validation.\n" +
+      "• Secure multi-gateway checkout integrated with Cashfree and Zwitch, with order tracking, invoice downloads, wishlists, and multiple addresses.\n" +
+      "• Hybrid authentication with Email/Password and Phone OTP verification via Firebase, secured with JWT and HTTP-only sessions.\n" +
+      "• Feature-packed Admin Panel: product CRUD with CSV bulk upload, inventory management, order fulfillment, hero sliders, categories, and sales analytics.\n" +
+      "• Automated CI/CD pipeline using GitHub Actions to deploy on a Linux VPS with PM2 and Nginx reverse proxy.\n",
+    techStack: ["Nextjs", "TypeScript", "Tailwind CSS", "Firebase", "Redux Toolkit", "ShadCN UI"],
     isLiveUrl: true,
-    liveurl: "https://biyondbazaar.vercel.app/",
-    githuburl: "github.com/guptaashish2003/biyondbazaar",
+    liveurl: "https://beyondbazaar.vercel.app/",
+    githuburl: "https://github.com/guptaashish2003/beyondbazaar",
     _id: "2",
     enabled: true,
   },
@@ -672,14 +682,18 @@ export const projectData = [
     sequence: 3,
     image: {
       public_id: "projects/netflix",
-      url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
+      url: "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/be6vtc5kgq0u9cv1ifdr.png",
     },
     description:
-      "A Netflix clone built using Nextjs, Tailwind CSS and MongoDB.",
-    techStack: ["Nextjs", "Tailwind CSS", "MongoDB"],
+      "• Full-stack video streaming application inspired by Netflix, engineered with React 18, Node.js, Express, and MongoDB.\n" +
+      "• Highly responsive streaming-style interface featuring dynamic multi-row carousels powered by Swiper.js and Tailwind CSS.\n" +
+      "• Secure user authentication and session management using JWT (JSON Web Tokens), HTTP-only cookies, and bcrypt password hashing.\n" +
+      "• Robust RESTful backend written in TypeScript with Mongoose schemas for managing movies, TV shows, genres, and user watchlists.\n" +
+      "• Client-side form validation and state handling using React Hook Form, Yup validation, and Axios.\n",
+    techStack: ["ReactJs", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     isLiveUrl: true,
     liveurl: "https://netflix-clone-ashish.vercel.app/",
-    githuburl: "github.com/guptaashish2003/netflix-clone",
+    githuburl: "https://github.com/guptaashish2003/fullstack-netflix-clone",
     _id: "3",
     enabled: true,
   },
@@ -688,14 +702,18 @@ export const projectData = [
     sequence: 4,
     image: {
       public_id: "projects/teacherbooking",
-      url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
+      url: "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/9lvtbofwo71qvpa2s59f.png",
     },
     description:
-      "A teacher booking system built using Nextjs, Tailwind CSS and MongoDB.",
-    techStack: ["Nextjs", "Tailwind CSS", "MongoDB"],
+      "• Comprehensive online tutor discovery and session booking platform (StudySpot India) built with React, Node.js, Express, and MongoDB.\n" +
+      "• Interactive tutor discovery allowing students and parents to search and filter certified teachers by subject, grade level, and location.\n" +
+      "• Detailed teacher profile pages showing qualifications, teaching experience, hourly fees, availability schedules, and reviews.\n" +
+      "• Seamless appointment booking workflow enabling students to book sessions online with automatic confirmation and schedule management.\n" +
+      "• Responsive single-page application built with Vite and Tailwind CSS, backed by a modular Node/Express REST API.\n",
+    techStack: ["ReactJs", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     isLiveUrl: true,
-    liveurl: "https://teacher-booking.vercel.app/",
-    githuburl: "github.com/guptaashish2003/teacher-booking",
+    liveurl: "https://studyspotindia.vercel.app/",
+    githuburl: "https://github.com/guptaashish2003/frontend_home_tuition",
     _id: "4",
     enabled: true,
   },
@@ -704,36 +722,44 @@ export const projectData = [
     sequence: 5,
     image: {
       public_id: "projects/mailtracker",
-      url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
+      url: "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/be6vtc5kgq0u9cv1ifdr.png",
     },
     description:
-      "A mail tracking website built using Nextjs, Tailwind CSS and MongoDB.",
+      "• 100% privacy-focused, extension-free email tracking web application for monitoring email open rates in real time.\n" +
+      "• Zero-permission approach: operates without requiring Chrome browser extensions or granting third-party access to personal Gmail accounts.\n" +
+      "• Generates an embeddable tracking code with an invisible 1×1 pixel server beacon that pings the server upon email opening.\n" +
+      "• Live dashboard built with Next.js and Tailwind CSS that captures exact opening timestamps, view counts, and engagement history in MongoDB.\n" +
+      "• Helps businesses and freelancers optimize email engagement, improve open rates, and verify read receipts securely.\n",
     techStack: ["Nextjs", "Tailwind CSS", "MongoDB"],
     isLiveUrl: true,
-    liveurl: "https://mailtracker.vercel.app/",
-    githuburl: "github.com/guptaashish2003/mailtracker",
+    liveurl: "https://webmailtracker.vercel.app/",
+    githuburl: "https://github.com/guptaashish2003/webmailtracker",
     _id: "5",
+    enabled: true,
   },
-
   {
-    title: "BiyondBytes",
+    title: "BeyondBytes",
     sequence: 6,
     image: {
       public_id: "projects/biyondbytes",
-      url: "https://plus.unsplash.com/premium_photo-1727197587817-6be08db433f9?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViaXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
+      url: "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/ujrygltr1emwybplisa5.png",
     },
     description:
-      "A personal portfolio website built using Nextjs, Tailwind CSS and Framer Motion.",
-    techStack: ["Nextjs", "Tailwind CSS", "Framer Motion"],
+      "• Full-stack modern editorial blogging platform built with Next.js 14 (App Router), TypeScript, Prisma ORM, and MongoDB.\n" +
+      "• Tiptap-powered rich-text editor supporting custom typography, inline images, tables, YouTube video embeds, code blocks, and formatting.\n" +
+      "• Role-based access control (Admin, Writer, User) integrated with Google OAuth via NextAuth.js v5.\n" +
+      "• Community engagement features including nested comment discussions, post likes, personal bookmarks, and a writer-follow system.\n" +
+      "• Real-time browser push notifications powered by Firebase Cloud Messaging (FCM) alerting readers of new publications.\n" +
+      "• Production SEO suite featuring dynamic metadata, Open Graph image cards, automated XML sitemaps, and JSON-LD structured data.\n" +
+      "• Comprehensive Admin dashboard for reviewing posts, moderating user comments, managing category tags, and managing writers.\n",
+    techStack: ["Nextjs", "TypeScript", "Tailwind CSS", "Prisma", "MongoDB", "NextAuth"],
     isLiveUrl: true,
-    liveurl: "https://biyondbytes.vercel.app/",
-    githuburl: "github.com/guptaashish2003/biyondbytes",
+    liveurl: "https://beyondbytes.vercel.app/",
+    githuburl: "https://github.com/guptaashish2003/beyondbytes",
     _id: "6",
     enabled: true,
   },
-
-]
-
+];
 export const ServiceData = [
   {
     name: "Frontend Development",
