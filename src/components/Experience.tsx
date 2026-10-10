@@ -4,13 +4,16 @@ import { formatDate } from "@/utils/Tools";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { PerspectiveText } from "./ui/Typography/PersPectiveText";
-import  SectionHeading  from "./ui/Typography/SectionHeading";
+import SectionHeading from "./ui/Typography/SectionHeading";
 import SlideIn from "./ui/Transitions/SlideIn";
-import {Transition} from "./ui/Transitions/Transition";
-export const Experience = ({timeline}:ExperienceProps) => {
-    const experience = timeline
-    .filter((line) => !line.forEducation && line.enabled === true)
-    .sort((a, b) => a.sequence - b.sequence);
+import { Transition } from "./ui/Transitions/Transition";
+export const Experience = ({ timeline }: ExperienceProps) => {
+  const experience = timeline
+    .filter((line) => (!line.forEducation) && line.enabled === true)
+    .sort(
+      (a, b) =>
+        new Date(b.startDate).getTime() - new Date(a.startDate).getTime()
+    );
 
   const [hover, setHover] = useState<number | null>(null);
 

@@ -145,6 +145,7 @@ export interface NavBarProps {
     forEducation: boolean;
     enabled: boolean;
     _id: string;
+    forHighLight?: boolean;
   }
   
   export interface AboutProps {

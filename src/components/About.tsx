@@ -12,8 +12,11 @@ const About = ({ about, timeline }: AboutProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   console.log(about, "about and timeline");
   const education = timeline
-    .filter((itm) => itm.forEducation && itm.enabled === true)
-    .sort((a, b) => b.sequence - a.sequence);
+  .filter((itm) => itm.forHighLight && itm.enabled)
+  .sort(
+    (a, b) =>
+      new Date(b.startDate).getTime() - new Date(a.startDate).getTime()
+  );
   return (
     <section
       className="grid md:grid-cols-[1.8fr_1fr] gap-x-10 py-20 px-4 md:px-8 relative"

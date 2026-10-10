@@ -4,6 +4,7 @@ import { useVariants } from "@/utils/Context";
 import { ArrowUpRight } from "lucide-react";
 import {motion} from 'framer-motion'
 import { TextReveal } from "../ui/Typography/TextReveal";
+import Image from "next/image";
 const Card = ({ title, image }: Project) => {
   const [hover, setHover] = useState(false);
   const { setVariant } = useVariants();
@@ -54,7 +55,7 @@ const Card = ({ title, image }: Project) => {
           </motion.p>
         </div>
       </div>
-      <img
+      <Image
         src={image.url}
         width={500}
         height={500}

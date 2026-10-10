@@ -31,13 +31,16 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
                 >
                   <X size={20} />
                 </button>
-                <Image
-                  src={singleProject.image.url}
-                  width={300}
-                  height={300}
-                  alt={singleProject.title}
-                  className="w-full h-full aspect-video md:aspect-[12/6] object-cover object-center"
-                />
+               <div className="relative w-full h-[300px] md:h-[400px]">
+  <Image
+    src={singleProject.image.url}
+    alt={singleProject.title}
+    fill
+    sizes="(max-width: 768px) 100vw, 50vw"
+    priority
+    className="object-cover"
+  />
+</div>
                 <div className="p-3">
                   <div className="flex items-center justify-between">
                     <h5 className="text-4xl font-bold">

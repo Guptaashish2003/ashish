@@ -20,8 +20,6 @@ export const Transition = ({
     whileInView={inView}
     transition={trans}
     {...rest}
-    />
-
- 
+    /> 
   )
 }
